@@ -1,6 +1,5 @@
 package SulemanProject2.JDBC2;
 
-import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 import java.io.IOException;
@@ -12,7 +11,6 @@ import java.util.Scanner;
 import com.jdbcrad.programs.Customer;
 import com.jdbcrad.programs.CustomerDAOImplementation;
 import com.jdbcrad.programs.CustomerDaoInterface;
-import com.jdbcrad.programs.CustomerUtil;
 
 public class CustomerApp {
 	Scanner scanner = new Scanner(System.in);
@@ -108,7 +106,7 @@ public class CustomerApp {
 		
 		case 7: {
 			System.out.println("Printing all customers sorted by name.");
-			List<Customer> customersByName = customerDao.viewCustomerByName();
+//			List<Customer> customersByName = customerDao.viewCustomerByName();
 //			customersByName.forEach(p->System.out.println(p));
 			break;
 		}
